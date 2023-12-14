@@ -7,7 +7,7 @@ import buyerRoutes from "./routes/buyer.js";
 import sellerRoutes from "./routes/seller.js";
 const app = express();
 dotenv.config();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use("/api/auth", authRoutes);
