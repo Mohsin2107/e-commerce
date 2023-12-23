@@ -29,17 +29,16 @@ node server.js
 ### 1. Auth APIs
  **POST ```/api/auth/register```**
 -  Register a user
--  **How to call :** pass userType,  username and password in the body
- **Example** : 
-userType : seller
-username : abcd
-password : 123456
+-  **How to call :** pass userType,  username and password in the body<br>
+  **Example** :
+   <br>userType : seller<br> username : abcd<br>
+password : 123456<br>
 
  **POST ```/api/auth/register```**
 -  Let a previously registered user
--  **How to call :** pass username and password in the body
- **Example** : 
-username : abcd
+-  **How to call :** pass username and password in the body<br>
+   **Example** :<br> 
+username : abcd<br>
 password : 123456
 
 ### 2.APIs for buyers(Only buyers can access it)
@@ -55,8 +54,8 @@ password : 123456
 -  Sends a list of items to create an order for seller with id = seller_id.
 -  **How to call :** 
     pass seller_id in the params. 
-    pass the list of names of products in the body.
-**Example:** {
+    pass the list of names of products in the body.<br>
+**Example:** <br>{
   "products": [
     "Macbook Pro M2",
     "Boat Rockerz 335"
@@ -66,8 +65,8 @@ password : 123456
 ### 3.APIs for sellers(Only sellers can access it)
  **POST ```/api/seller/create-catalog```**
 -  Seller sends a list of items to create a catalog or add more products in the catalog.
--  **How to call :**  pass a list of names and prices of products.
--  **Example:** {
+-  **How to call :**  pass a list of names and prices of products.<br>
+-  **Example:** <br>{
   "items": [
     {
       "name": "Macbook Pro M2",
