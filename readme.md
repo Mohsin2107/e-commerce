@@ -2,6 +2,12 @@
 
 Experience a unified e-commerce hub – my Node.js backend, seamlessly catering to buyers and sellers. Leveraging Node.js, it ensures a secure, feature-rich marketplace for all.
 
+## Tech Stack
+![nodejs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)&nbsp;
+![expressjs](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)&nbsp;
+![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)&nbsp;
+![jwt](	https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)&nbsp;
+
 ## How to run
  First create a .env file using the data given in envinfo.txt file.
 ```sh 
@@ -15,6 +21,8 @@ node server.js
 - Buyers can create an Order that contains a list of items from the seller's catalog
 - Sellers can GET a list of all orders they've received
 
+## Database Schema
+![Capture](DBSchema.png)
 
 ## APIs
 
@@ -34,7 +42,7 @@ password : 123456
 username : abcd
 password : 123456
 
-#### 2.APIs for buyers(Only buyers can access it)
+### 2.APIs for buyers(Only buyers can access it)
  **GET ```/api/buyer/list-of-sellers```**
 -  Get a list of sellers.
 -  **How to call :** simply call the API
@@ -55,7 +63,7 @@ password : 123456
   ]
 }
 
-#### 3.APIs for sellers(Only sellers can access it)
+### 3.APIs for sellers(Only sellers can access it)
  **POST ```/api/seller/create-catalog```**
 -  Seller sends a list of items to create a catalog or add more products in the catalog.
 -  **How to call :**  pass a list of names and prices of products.
